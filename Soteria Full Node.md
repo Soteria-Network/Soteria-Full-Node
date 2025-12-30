@@ -143,7 +143,12 @@ Use `soteria-cli`:
 - Blockchain info:
   ```bash
   soteria-cli getblockchaininfo
-  soteria-cli getblockcount
+  soteria-cli getblockcount               #return block count
+  soteria-cli getmempoolinfo              #returns memory info
+  soteria-cli getdifficulty               #return difficulty
+  soteria-cli getchaintxstats             #returns transaction stats
+  soteria-cli abandontransaction "txid"   #cancel a transaction
+  soteria-cli pruneblockchain             #deletes old blocks for space
   ```
 - Wallet info:
   ```bash
