@@ -128,27 +128,28 @@ sudo cp soteria-cli /usr/local/bin/
   # Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6
   whitebind=<addr>
 
-   ##############################################################
-  ##            Quick e.g. on addnode vs connect            ##
-  ##  Let's say for instance you use addnode=89.105.213.189:8323          ##
-  ##  addnode will connect you to and tell you about the      ##
-  ##    nodes connected to 89.105.213.189:8323.  In addition it will tell ##
-  ##    the other nodes connected to it that you exist so     ##
-  ##    they can connect to you.                              ##
-  ##  connect will not do the above when you 'connect' to it. ##
-  ##    It will *only* connect you to 89.105.213.189 and no one else.##
-  ##                                                          ##
-  ##  So if you're behind a firewall, or have other problems  ##
-  ##  finding nodes, add some using 'addnode'.                ##
-  ##                                                          ##
-  ##  If you want to stay private, use 'connect' to only      ##
-  ##  connect to "trusted" nodes.                             ##
-  ##                                                          ##
-  ##  If you run multiple nodes on a LAN, there's no need for ##
-  ##  all of them to open lots of connections.  Instead       ##
-  ##  'connect' them all to one node that is port forwarded   ##
-  ##  and has lots of connections.                            ##
-  ##############################################################
+  ##################################################################
+  ##            Quick e.g. on addnode vs connect                  ##
+  ##  Let's say for instance you use addnode=89.105.213.189:8323  ##
+  ##  addnode will connect you to and tell you about the nodes    ##
+  ##  connected to 89.105.213.189:8323. In addition it will       ##
+  ##  tell the other nodes.                                       ##
+  ##  connected to it that you exist so they can connect to you.  ##
+  ##  connect will not do the above when you 'connect' to it.     ##
+  ##  It will *only* connect you to 89.105.213.189 and no one     ##
+  ##  else.                                                       ## 
+  ##                                                              ##
+  ##  So if you're behind a firewall, or have other problems      ##
+  ##  finding nodes, add some using 'addnode'.                    ##
+  ##                                                              ##
+  ##  If you want to stay private, use 'connect' to only          ##
+  ##  connect to "trusted" nodes.                                 ##
+  ##                                                              ##
+  ##  If you run multiple nodes on a LAN, there's no need         ##
+  ##  for all of them to open lots of connections. Instead        ##
+  ##  'connect' them all to one node that is port forwarded       ##
+  ##  and has lots of connections.                                ##
+  ##################################################################
   
   # Use as many addnode= settings as you like to connect to specific peers
   addnode=89.105.213.189:8323  // This is our official node
@@ -296,9 +297,9 @@ Use `soteria-cli`:
   soteria-cli getblockcount                                    #return block count
   soteria-cli getmempoolinfo                                   #returns memory info
   soteria-cli getdifficulty                                    #return difficulty
-     soteria-cli getchaintxstats                               #returns transaction stats
+  soteria-cli getchaintxstats                                  #returns transaction stats
   soteria-cli abandontransaction "txid"                        #cancel a transaction
-   soteria-cli pruneblockchain                                 #deletes old blocks for space
+  soteria-cli pruneblockchain                                  #deletes old blocks for space
   ```
 - Wallet info:
   ```bash
@@ -317,7 +318,7 @@ Use `soteria-cli`:
   soteria-cli importaddress "address" ( "label" rescan p2sh )  #import address
   soteria-cli mnemonic "your words"                            #space separated list of 12-words to import
   soteria-cli mnemonicpassphrase "password"                    #secures your 12-word mnemonic word
-  soteria-cli getmywords                                       # retrieve your BIP44 words
+  soteria-cli getmywords                                       #retrieve your BIP44 words
   soteria-cli encryptwallet "passphrase"                       #encrypts wallet with passphrase
   soteria-cli listaddressgroupings                             #shows accounts with balances
   soteria-cli listassetbalancesbyaddress "address"             #returns assets for wallet
