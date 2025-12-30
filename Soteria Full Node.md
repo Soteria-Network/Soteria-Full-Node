@@ -133,8 +133,9 @@ sudo cp soteria-cli /usr/local/bin/
   ##  Let's say for instance you use addnode=89.105.213.189:8323  ##
   ##  addnode will connect you to and tell you about the nodes    ##
   ##  connected to 89.105.213.189:8323. In addition it will       ##
-  ##  tell the other nodes.                                       ##
-  ##  connected to it that you exist so they can connect to you.  ##
+  ##  tell the other nodes connected to it that you exist so      ##
+  ##  they can connect to you.                                    ##
+  ##                                                              ##
   ##  connect will not do the above when you 'connect' to it.     ##
   ##  It will *only* connect you to 89.105.213.189 and no one     ##
   ##  else.                                                       ## 
