@@ -293,12 +293,12 @@ Use `soteria-cli`:
 - Blockchain info:
   ```bash
   soteria-cli getblockchaininfo
-  soteria-cli getblockcount               #return block count
-  soteria-cli getmempoolinfo              #returns memory info
-  soteria-cli getdifficulty               #return difficulty
-  soteria-cli getchaintxstats             #returns transaction stats
-  soteria-cli abandontransaction "txid"   #cancel a transaction
-  soteria-cli pruneblockchain             #deletes old blocks for space
+  soteria-cli getblockcount                                    #return block count
+  soteria-cli getmempoolinfo                                   #returns memory info
+  soteria-cli getdifficulty                                    #return difficulty
+     soteria-cli getchaintxstats                               #returns transaction stats
+  soteria-cli abandontransaction "txid"                        #cancel a transaction
+   soteria-cli pruneblockchain                                 #deletes old blocks for space
   ```
 - Wallet info:
   ```bash
@@ -326,11 +326,11 @@ Use `soteria-cli`:
   ```
 - Network info:
   ```bash
-  soteria-cli getpeerinfo                     #returns connected peers and stats
-  soteria-cli getconnectioncount              #returns count of peers
-  soteria-cli getnettotals                    #returns data totals
-  soteria-cli getnetworkinfo                  #returns network status
-  soteria-cli setnetworkactive "true|false"   #turns on/off networking
+  soteria-cli getpeerinfo                                      #returns connected peers and stats
+  soteria-cli getconnectioncount                               #returns count of peers
+  soteria-cli getnettotals                                     #returns data totals
+  soteria-cli getnetworkinfo                                   #returns network status
+  soteria-cli setnetworkactive "true|false"                    #turns on/off networking
   ```
 
 ---
