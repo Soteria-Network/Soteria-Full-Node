@@ -152,13 +152,35 @@ Use `soteria-cli`:
   ```
 - Wallet info:
   ```bash
-  soteria-cli getwalletinfo
-  soteria-cli getbalance "walletAddress"
+  soteria-cli listwallets                                      #lists wallets open
+  soteria-cli listaccounts                                     #list accounts under wallet
+  soteria-cli getwalletinfo                                    #returns summary wallet info
+  soteria-cli getbalance "walletAddress"                       #returns specific wallet balance 
+  soteria-cli getunconfirmedbalance                            #returns pending balance
+  soteria-cli getaddressesbyaccount "accountName"              #returns RVN address
+  soteria-cli validateaddress "walletAddress"                  #verifies address
+  soteria-cli getaccountaddress "accountName"                  #gets a new SOTER address
+  soteria-cli backupwallet "destination"                       #makes copy of wallet
+  soteria-cli dumpprivkey "walletAddress"                      #retrieves private key
+  soteria-cli importprivkey "privkey" ( "label" ) ( rescan )   #import pvt key
+  soteria-cli importpubkey "pubkey" ( "label" rescan )         #import pub key
+  soteria-cli importaddress "address" ( "label" rescan p2sh )  #import address
+  soteria-cli mnemonic "your words"                            #space separated list of 12-words to import
+  soteria-cli mnemonicpassphrase "password"                    #secures your 12-word mnemonic word
+  soteria-cli getmywords                                       # retrieve your BIP44 words
+  soteria-cli encryptwallet "passphrase"                       #encrypts wallet with passphrase
+  soteria-cli listaddressgroupings                             #shows accounts with balances
+  soteria-cli listassetbalancesbyaddress "address"             #returns assets for wallet
+  soteria-cli move "fromaccount" "toaccount" amount            #send between *accounts*
+  soteria-cli sendfrom "fromaccount" "toaddress" amount        #send to different wallet
   ```
 - Network info:
   ```bash
-  soteria-cli getpeerinfo
-  soteria-cli getconnectioncount
+  soteria-cli getpeerinfo                     #returns connected peers and stats
+  soteria-cli getconnectioncount              #returns count of peers
+  soteria-cli getnettotals                    #returns data totals
+  soteria-cli getnetworkinfo                  #returns network status
+  soteria-cli setnetworkactive "true|false"   #turns on/off networking
   ```
 
 ---
