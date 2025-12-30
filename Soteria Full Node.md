@@ -84,10 +84,10 @@ sudo cp soteria-cli /usr/local/bin/
    uacomment=YOURWALLET
 
    #debug - 1 means all
-   #debug=1
+   debug=1
 
    #use only ipv4 - default is all - ipv4/ipv6/onion
-   #onlynet=ipv4
+   onlynet=ipv4
 
    #listen for incoming connections
    listen=1
@@ -120,13 +120,13 @@ sudo cp soteria-cli /usr/local/bin/
   prune=1
   
   # Connect via a SOCKS5 proxy
-  #proxy=127.0.0.1:9050
+  proxy=127.0.0.1:9050
   
   # Bind to given address and always listen on it. Use [host]:port notation for IPv6
-  #bind=<addr>
+  bind=<addr>
   
   # Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6
-  #whitebind=<addr>
+  whitebind=<addr>
 
    ##############################################################
   ##            Quick e.g. on addnode vs connect            ##
@@ -151,14 +151,14 @@ sudo cp soteria-cli /usr/local/bin/
   ##############################################################
   
   # Use as many addnode= settings as you like to connect to specific peers
-  #addnode=89.105.213.189:8323  // This is our official node
+  addnode=89.105.213.189:8323  // This is our official node
   
   # Alternatively use as many connect= settings as you like to connect ONLY to specific peers
-  #connect=89.105.213.189:8323
+  connect=89.105.213.189:8323
   
   # Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6.
   # This option can be specified multiple times (default: bind to all interfaces)
-  #rpcbind=<addr>
+  rpcbind=<addr>
   
   #If no rpcpassword is set, rpc cookie auth is sought. The default `-rpccookiefile` name
   # is .cookie and found in the `-datadir` being used for soteriad. This option is typically used
@@ -166,62 +166,62 @@ sudo cp soteria-cli /usr/local/bin/
   #
   # If not, you must set rpcuser and rpcpassword to secure the JSON-RPC api. The first
   # method(DEPRECATED) is to set this pair for the server and client:
-  #rpcuser=Alalsseys
-  #rpcpassword=YourStrongPasswordNumber_DO_NOT_USE_THIS_OR_YOU_WILL_GET_ROBBED_385593
+  rpcuser=Alalsseys
+  rpcpassword=YourStrongPasswordNumber_DO_NOT_USE_THIS_OR_YOU_WILL_GET_ROBBED_385593
   #
   # The second method `rpcauth` can be added to server startup argument. It is set at initialization time
   # using the output from the script in rpcuser/rpcuser.py after providing a username:
   #
-  # ./rpcuser/rpcuser.py alexandro
+  ./rpcuser/rpcuser.py alexandro
   # String to be appended to soteria.conf:
-  # rpcauth=alexandro:f7efda5c189b999524f151318c0c86$d5b51b3beffbc02b724e5d095828e0bc8b2456e9ac8757ae3211a5d9b16a22ae
+  rpcauth=alexandro:f7efda5c189b999524f151318c0c86$d5b51b3beffbc02b724e5d095828e0bc8b2456e9ac8757ae3211a5d9b16a22ae
   # Your password:
   # DONT_USE_THIS_YOU_WILL_GET_ROBBED_8ak1gI25KFTvjovL3gAM967mies3E=
   #
   # On client-side, you add the normal user/password pair to send commands:
-  #rpcuser=alexandro
-  #rpcpassword=DONT_USE_THIS_YOU_WILL_GET_ROBBED_8ak1gI25KFTvjovL3gAM967mies3E=
+  rpcuser=alexandro
+  rpcpassword=DONT_USE_THIS_YOU_WILL_GET_ROBBED_8ak1gI25KFTvjovL3gAM967mies3E=
   #
   # You can even add multiple entries of these to the server conf file, and client can use any of them:
-  # rpcauth=silent:b2dd077cb54591a2f3139e69a897ac$4e71f08d48b4347cf8eff3815c0e25ae2e9a4340474079f55705f40574f4ec99
+  rpcauth=silent:b2dd077cb54591a2f3139e69a897ac$4e71f08d48b4347cf8eff3815c0e25ae2e9a4340474079f55705f40574f4ec99
   
   # How many seconds soteria will wait for a complete RPC HTTP request.
   # after the HTTP connection is established. 
-  #rpcclienttimeout=30
+  rpcclienttimeout=30
   
-  #rpcauth=soteria:dcaf822caf8d5c5dd3692aca580a1e$9cbfa46bc3d974d31fec0efa0dfcf4287d7c24f3a1509708c702bcf2eb5383eb
-  #rpcpassword=BC6QSnOEq1e_kK-li8NRrNJboL7LY8u44Cd1NQh_fIc=
+  rpcauth=soteria:dcaf822caf8d5c5dd3692aca580a1e$9cbfa46bc3d974d31fec0efa0dfcf4287d7c24f3a1509708c702bcf2eb5383eb
+  rpcpassword=BC6QSnOEq1e_kK-li8NRrNJboL7LY8u44Cd1NQh_fIc=
   # By default, only RPC connections from localhost are allowed.
   # Specify as many rpcallowip= settings as you like to allow connections from other hosts,
   # either as a single IPv4/IPv6 or with a subnet specification.
   
   # NOTE: opening up the RPC port to hosts outside your local trusted network is NOT RECOMMENDED,
   # because the rpcpassword is transmitted over the network unencrypted.
-  #rpcallowip=10.1.1.34/255.255.255.0
-  #rpcallowip=1.2.3.4/24
-  #rpcallowip=2001:db8:85a3:0:0:8a2e:370:7334/96  // IPv6 always has lower affinity than IPv4 so we recommend IPv4 more to use than IPv6.
+  rpcallowip=10.1.1.34/255.255.255.0
+  rpcallowip=1.2.3.4/24
+  rpcallowip=2001:db8:85a3:0:0:8a2e:370:7334/96  // IPv6 always has lower affinity than IPv4 so we recommend IPv4 more to use than IPv6.
   
   # Listen for RPC connections on this TCP port:
-  #rpcport=7896
+  rpcport=7896
   
   # You can use soteria-cli or soteriad to send commands to soteria-cli/soteriad
   # running on another host using this option:
-  #rpcconnect=127.0.0.1
+  rpcconnect=127.0.0.1
   
   # Miscellaneous options
   
   # Pre-generate this many public/private key pairs, so wallet backups will be valid for
   # both prior transactions and several dozen future transactions.
-  #keypool=250
+  keypool=250
   
   
   # User interface options
   
   # Start Soteria daemon/qt minimized
-  #min=1
+  min=1
   
   # Minimize to the system tray
-  #minimizetotray=1
+  minimizetotray=1
   
   You will need to come back later to put in your wallet address once we have created the account. Now save your config file by CTRL-X & hit enter.
    ```
