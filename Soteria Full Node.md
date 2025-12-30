@@ -10,7 +10,7 @@ This guide shows you how to get a basic **Soteria Network Full Node** up and run
 ## 📦 Requirements
 
 - A computer (preferably well‑performing).
-- HDD or SSD, at lease 20GB free
+- HDD or SSD, at least 20GB free
 - **Debian 13** or **Xubuntu/Ubuntu 24 & 25** for the latest Soteria daemon.  
 - **For older Linux versions**, use the **Legacy or old daemon** to avoid `glibc` incompatibility.
 - Access via command line or SSH.
