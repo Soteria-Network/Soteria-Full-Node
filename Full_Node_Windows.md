@@ -32,7 +32,7 @@ Core.
 
 
 
-#### Soteria Core GUI {#win10-gui}
+#### Soteria Core GUI
 
 
 Press the Windows key (`⊞ Win`) and start typing "soteria".  When the
@@ -73,7 +73,7 @@ automatically started minimized in the task bar.
 
 
 
-#### Soteria Core Daemon {#win10-daemon}
+#### Soteria Core Daemon
 
 
 To start Soteria Core daemon, first open a command window: press the
@@ -157,7 +157,7 @@ Core.
 
 
 
-#### Soteria Core GUI {#win8-gui}
+#### Soteria Core GUI
 
 
 Press the Windows key (`⊞ Win`) and start typing "soteria".  When the
@@ -202,7 +202,7 @@ automatically started minimized in the task bar.
 
 
 
-#### Soteria Core Daemon {#win8-daemon}
+#### Soteria Core Daemon
 
 
 To start Soteria Core daemon, first open a command window: press the
@@ -285,7 +285,7 @@ Core.
 
 
 
-#### Soteria Core GUI {#win7-gui}
+#### Soteria Core GUI
 
 
 Open the *Start* menu, type `soteria` into the search box, and click the
@@ -329,7 +329,7 @@ The next time you login to your desktop, Soteria Core GUI will be
 automatically started minimized in the task bar.
 
 
-##### Soteria Core Daemon {#win7-daemon}
+##### Soteria Core Daemon
 
 
 To start Soteria Core daemon, first open a command window: press the
