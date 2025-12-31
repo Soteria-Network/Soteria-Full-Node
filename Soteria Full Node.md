@@ -22,7 +22,10 @@ This guide shows you how to get a basic **Soteria Network Full Node** up and run
 ```bash
 sudo apt update
 sudo apt install -y git unzip
+sudo apt install wget         
 ```
+
+##### On some distros you need to install it, On most Linux distributions (including Debian), wget is usually preinstalled by default
 
 ---
 
